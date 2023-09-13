@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class WindowHandling2 {
+public class WindowHandling3 {
 	static WebDriver driver;
 	public static void main(String[] args) throws IOException, InterruptedException {
 		FileInputStream fis = new FileInputStream("../AutomationTesting/commondata.properties");
@@ -46,37 +46,38 @@ public class WindowHandling2 {
 
 		driver.findElement(By.xpath("//img[@alt='Twitter']")).click();
 
-		//driver.findElement(By.xpath("//img[@alt='Facebook']")).click();
+		driver.findElement(By.xpath("//img[@alt='Facebook']")).click();
+
+		driver.findElement(By.xpath("//img[@alt='Blogs']")).click();
 
 		Thread.sleep(2000);
 
 		// Switch Control from One window to another
 
-		Set<String> windows = driver.getWindowHandles();
+		Set<String> allWindows = driver.getWindowHandles();
 
-		Iterator<String> allWindows = windows.iterator();
+		// reference is storing all window ids
 
-		while (allWindows.hasNext())
+		System.out.println(allWindows);
+
+		Iterator<String> windows = allWindows.iterator();
+
+		while (windows.hasNext()) 
 		{
-			String str = allWindows.next();
-			System.out.println();
-			Thread.sleep(1000);
-			driver.switchTo().window(str);
-			
-			if(driver.getCurrentUrl().contains("twitter")) 
+			String id=windows.next();
+			driver.switchTo().window(id);
+			System.out.println(driver.getTitle());
+
+			if(driver.switchTo().window(id).getTitle().contains("Vtiger CRM | Bangalore"))
 			{
-				Thread.sleep(3000);
-				driver.findElement(By.xpath("//div[@aria-label='Close']")).click();
-				
 				Thread.sleep(2000);
+				//driver.findElement(By.xpath("//span[text()='Create new account']")).click();
+				driver.quit();
 			}
-			
-			
-			
+
 
 		}
 
-		
 
 
 
