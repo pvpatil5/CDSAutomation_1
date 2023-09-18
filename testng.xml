@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Pavan">
+		<classes>
+			<class name="before_after.Test_3">
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+			<class name="before_after.Test_4" >
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--Test -->
+	
+	<test thread-count="5" name="Pavan">
+		<classes>
+			<class name="before_after.Test_3">
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+			<class name="before_after.Test_4" >
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--Test -->
+	
+	
+	<test thread-count="5" name="Pavan">
+		<classes>
+			<class name="before_after.Test_3">
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+			<class name="before_after.Test_4" >
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--Test -->
+	
+	
+	<test thread-count="5" name="Pavan">
+		<classes>
+			<class name="before_after.Test_3">
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+			<class name="before_after.Test_4" >
+				<methods>
+					<include name="script"></include>
+					<include name="script_1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--Test -->
+
+	
+</suite> <!--Suite -->
+
+
