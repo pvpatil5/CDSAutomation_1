@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="co.VTiger.TestCases.TC_01_CreateOrganizationTest">
+      <class name="DataProvider_1">
         <methods>
-          <include name="createOrg"/>
-          <include name="launchBrowser"/>
-          <include name="loginToApp"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- co.VTiger.TestCases.TC_01_CreateOrganizationTest -->
+      </class> <!-- DataProvider_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
