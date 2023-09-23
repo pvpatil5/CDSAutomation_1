@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-21T09:19:36 IST" name="Default suite" finished-at="2023-09-21T09:21:10 IST" duration-ms="94468">
+  <suite started-at="2023-09-23T11:26:36 IST" name="Default suite" finished-at="2023-09-23T11:26:36 IST" duration-ms="56">
     <groups>
     </groups>
-    <test started-at="2023-09-21T09:19:36 IST" name="Default test" finished-at="2023-09-21T09:21:10 IST" duration-ms="94468">
-      <class name="DataProvider_1">
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:DataProvider_1@791f145a]" started-at="2023-09-21T09:19:36 IST" name="test1" data-provider="getValue" finished-at="2023-09-21T09:20:00 IST" duration-ms="24821" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BOM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PNQ]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-09-23T11:26:36 IST" name="Default test" finished-at="2023-09-23T11:26:36 IST" duration-ms="56">
+      <class name="co.VTiger.TestCases.TC_05_ReadMvnTest">
+        <test-method signature="read()[pri:0, instance:co.VTiger.TestCases.TC_05_ReadMvnTest@242b836]" started-at="2023-09-23T11:26:36 IST" name="read" finished-at="2023-09-23T11:26:36 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:DataProvider_1@791f145a]" started-at="2023-09-21T09:20:00 IST" name="test1" data-provider="getValue" finished-at="2023-09-21T09:20:24 IST" duration-ms="23348" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DEL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[BLR]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:DataProvider_1@791f145a]" started-at="2023-09-21T09:20:24 IST" name="test1" data-provider="getValue" finished-at="2023-09-21T09:20:47 IST" duration-ms="23240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HYD]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CNN]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:DataProvider_1@791f145a]" started-at="2023-09-21T09:20:47 IST" name="test1" data-provider="getValue" finished-at="2023-09-21T09:21:10 IST" duration-ms="22924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DXB]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[JFK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- DataProvider_1 -->
+        </test-method> <!-- read -->
+      </class> <!-- co.VTiger.TestCases.TC_05_ReadMvnTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
