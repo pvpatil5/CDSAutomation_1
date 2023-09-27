@@ -30,11 +30,11 @@ public class BaseClass
 	 * @return driver
 	 * @throws IOException 
 	 */
-	@Parameters("browser")
+	
 	@BeforeClass
-	public WebDriver launchBrowser(String browser) throws IOException 
+	public WebDriver launchBrowser() throws IOException 
 	{
-		//String browser=readDataPropfile.readData("browser");
+		String browser=readDataPropfile.readData("browser");
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
