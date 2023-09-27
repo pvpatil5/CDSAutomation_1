@@ -8,7 +8,7 @@ public class ReadDataFromPropFile {
 
 	public String readData(String key) throws IOException
 	{
-		FileInputStream fileInputStream = new FileInputStream("../AutomationTesting/commondata.properties");
+		FileInputStream fileInputStream = new FileInputStream("./commondata.properties");
 		Properties properties = new Properties();
 		properties.load(fileInputStream);
 		return properties.getProperty(key);
