@@ -3,12 +3,16 @@ package com.Base;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -71,6 +75,21 @@ public class BaseClass
 		System.out.println("========Browser Closed=========");
 		Thread.sleep(3000);
 		driver.close();
+	}
+	
+	public void selectValueDD(WebElement element,String value) {
+		Select s1 = new Select(element);
+		s1.selectByValue(value);
+	}
+	
+	public void selectValueDD(By locator,String value) {
+		Select s1 = new Select(driver.findElement(locator));
+		s1.selectByValue(value);
+	}
+	
+	public void moveToElement(WebElement element) {
+		Actions act = new Actions(driver);
+		act.moveToElement(element);
 	}
 	
 }
