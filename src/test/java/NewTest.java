@@ -5,6 +5,7 @@ public class NewTest {
 	@Test
 	public void newmethod() 
 	{
+		System.out.println("hi");
 		System.out.println("class add by sourabh");
 	}
 }
